@@ -73,6 +73,7 @@ public class MusicActivity extends Activity {
         stopMusic = findViewById(R.id.stopMusic);
         endMusic = findViewById(R.id.end);
 
+        mSeekBar = findViewById(R.id.seekbar);
         previousMusic = findViewById(R.id.previousBtn);
         previousMusic = findViewById(R.id.nextBtn);
         musicStatus = findViewById(R.id.musicStatus);

@@ -42,6 +42,7 @@ public class MainActivity extends Activity {
         toSettingBtn = findViewById(R.id.showMore);
         playMusic = findViewById(R.id.playMusic);
         stopMusicBtn = findViewById(R.id.stopMusic);
+        toDetailBtn = findViewById(R.id.toDetail);
     }
 
     private void initAction() {
