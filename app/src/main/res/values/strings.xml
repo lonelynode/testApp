@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >4 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!-- User info -->
+    <string name="username">"username"</string>
+    <string name="password">"password"</string>
+    <string name="toSetting">"Setting"</string>
+    <string name="logout">"Log out"</string>
+
+    <!-- button -->
+    <string name="play_music">"Play Music"</string>
+    <string name="play_music2">"Play Music2"</string>
+    <string name="pauseMusic">"Pause Music"</string>
+    <string name="unPauseMusic">"UnPause Music"</string>
+    <string name="stop_music">"Stop Music"</string>
+    <string name="toDetail">"Detail"</string>
+    <string name="musicService">"musicService"</string>
+
+    <!-- music desc -->
+
+    <string name="music_playing">"Playing"</string>
+    <string name="music_pause">"Pause"</string>
+</resources>

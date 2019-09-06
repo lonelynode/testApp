@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.testapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--
+    在读取音乐文件的时候，为了同步输入输出，是需要写的权限的 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".LaunchActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingActivity"/>
+
+        <service android:name="com.example.service.MusicService"
+            android:enabled="true"
+            android:label="musicService">
+        </service>
+
+        <service android:name="com.example.service.MusicService2"
+            android:enabled="true"
+            android:label="musicService2">
+        </service>
+
+        <!--<receiver android:name="com.example.receiver.MusicReceiver">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.example.testapp.pauseMusic"/>-->
+                <!--<action android:name="com.example.testapp.stopMusic"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+    </application>
+
+</manifest>
