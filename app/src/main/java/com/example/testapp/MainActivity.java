@@ -60,7 +60,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 // Start service to play music
-                String filePath = Environment.getExternalStorageDirectory().getPath() + "/music/MARIAGE D'AMOUR.m4a";
+//                String filePath = Environment.getExternalStorageDirectory().getPath() + "/music/MARIAGE D'AMOUR.m4a";
+                String filePath = Environment.getExternalStorageDirectory().getPath() + "/music/胡彦斌 - 山丘.mp3";
                 File file = new File(filePath);
                 if (file.exists()) {
                     Intent musicServiceIntent = new Intent(MainActivity.this, MusicService.class);

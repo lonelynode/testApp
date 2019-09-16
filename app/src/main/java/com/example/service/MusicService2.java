@@ -24,8 +24,11 @@ public class MusicService2 extends Service {
     }
 
     private String[] musicDir = new String[]{
-            Environment.getExternalStorageDirectory().getAbsolutePath() + "/music/MARIAGE D'AMOUR.m4a",
-            Environment.getExternalStorageDirectory().getAbsolutePath() + "/music/MARIAGE D'AMOUR2.m4a"};
+//            Environment.getExternalStorageDirectory().getAbsolutePath() + "/music/MARIAGE D'AMOUR.m4a",
+//            Environment.getExternalStorageDirectory().getAbsolutePath() + "/music/MARIAGE D'AMOUR2.m4a"};
+            Environment.getExternalStorageDirectory().getAbsolutePath() + "/music/胡彦斌 - 山丘.mp3",
+            Environment.getExternalStorageDirectory().getAbsolutePath() + "/music/胡彦斌 - 山丘.mp3",
+            Environment.getExternalStorageDirectory().getAbsolutePath() + "/music/花太香任贤齐.mp3"};
     private int musicIndex = 1;
 
     public static MediaPlayer mp = new MediaPlayer();

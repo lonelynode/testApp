@@ -10,7 +10,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
 
         <TextView
             android:id="@+id/musicStatus"
@@ -40,30 +41,31 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/previousBtn"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/play_music" />
+            android:text="@string/preMusic" />
 
         <Button
             android:id="@+id/playMusic"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:layout_weight="1"
-            android:text="@string/stop_music"
-            android:layout_marginTop="60dp" />
+            android:text="@string/stop_music" />
 
         <Button
             android:id="@+id/nextBtn"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:layout_weight="1"
-            android:text="@string/stop_music"
-            android:layout_marginTop="60dp" />
+            android:text="@string/nextMusic" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -77,15 +79,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/stop_music"
-            android:layout_marginTop="60dp" />
+            android:layout_marginTop="20dp" />
 
         <Button
             android:id="@+id/end"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:layout_weight="1"
-            android:text="@string/stop_music"
-            android:layout_marginTop="60dp" />
+            android:text="@string/end_music" />
 
 
 

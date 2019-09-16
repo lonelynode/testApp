@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">TestApp</string>
     <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_singletop">Sign in</string>
     <string name="prompt_username">Username</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in</string>
@@ -21,9 +22,14 @@
     <string name="play_music2">"Play Music2"</string>
     <string name="pauseMusic">"Pause Music"</string>
     <string name="unPauseMusic">"UnPause Music"</string>
+    <string name="preMusic">"Pre Music"</string>
+    <string name="nextMusic">"Next Music"</string>
     <string name="stop_music">"Stop Music"</string>
+    <string name="end_music">"End Music"</string>
     <string name="toDetail">"Detail"</string>
     <string name="musicService">"musicService"</string>
+    <string name="toSingleTop">"To SingleTop"</string>
+    <string name="toMain">"To Main"</string>
 
     <!-- music desc -->
 

@@ -49,7 +49,7 @@ public class MusicActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_music);
 
         filePath = Environment.getExternalStorageDirectory().getPath() + "/music/MARIAGE D'AMOUR2.m4a";
 
@@ -69,13 +69,13 @@ public class MusicActivity extends Activity {
     }
 
     private void initView() {
-        playOrPauseMusic = findViewById(R.id.pauseMusic);
+        playOrPauseMusic = findViewById(R.id.playMusic);
         stopMusic = findViewById(R.id.stopMusic);
         endMusic = findViewById(R.id.end);
 
         mSeekBar = findViewById(R.id.seekbar);
         previousMusic = findViewById(R.id.previousBtn);
-        previousMusic = findViewById(R.id.nextBtn);
+        nextMusic = findViewById(R.id.nextBtn);
         musicStatus = findViewById(R.id.musicStatus);
         musicTime = findViewById(R.id.musicTime);
 
@@ -130,6 +130,8 @@ public class MusicActivity extends Activity {
             public void onClick(View v) {
                 handler.removeCallbacks(runnable);
                 unbindService(sc);
+                Intent intent = new Intent(MusicActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -260,7 +262,6 @@ public class MusicActivity extends Activity {
     @Override
     protected void onDestroy() {
         Log.i(MainActivityTAG, "Trigger destroy event");
-        unbindService(sc);
         super.onDestroy();
     }
 }

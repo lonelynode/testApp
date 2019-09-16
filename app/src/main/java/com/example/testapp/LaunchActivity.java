@@ -31,13 +31,13 @@ public class LaunchActivity extends Activity {
 
     private void handleLaunchApp() {
         Intent launchIntent;
-//        if (checkUserProfile()) {
-//            // Go to main page
-//            launchIntent = new Intent(this, MainActivity.class);
-//        } else {
-//            // Go to login page
-//            launchIntent = new Intent(this, LoginActivity.class);
-//        }
+        if (checkUserProfile()) {
+            // Go to main page
+            launchIntent = new Intent(this, MainActivity.class);
+        } else {
+            // Go to login page
+            launchIntent = new Intent(this, LoginActivity.class);
+        }
         launchIntent = new Intent(this, MainActivity.class);
         startActivity(launchIntent);
     }

@@ -24,6 +24,10 @@
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
         <activity
+            android:name=".testSingleTopActivity"
+            android:label="@string/title_activity_singletop"
+            android:launchMode="singleTop"/>
+        <activity
             android:name=".LaunchActivity"
             android:screenOrientation="portrait">
             <intent-filter>
